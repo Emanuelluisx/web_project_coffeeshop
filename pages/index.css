@@ -93,6 +93,7 @@
 }
 
 .header__footer {
+  display: flex;
   position: absolute;
   bottom: 40px;
   left: 80px;
@@ -112,6 +113,9 @@
 }
 
 .header__hours {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .header__adress {
@@ -187,3 +191,4 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
