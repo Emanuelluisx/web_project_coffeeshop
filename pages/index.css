@@ -54,7 +54,7 @@
 .header__content {
   display: flex;
   justify-content: flex-end; /* Centraliza conteúdo */
-  margin-bottom: px;
+
 }
 
 .span-accent {
