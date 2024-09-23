@@ -11,6 +11,7 @@
 .header {
   display: flex;
   flex-direction: column;
+
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
@@ -52,7 +53,8 @@
 
 .header__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* Centraliza conteúdo */
+  margin-bottom: px;
 }
 
 .span-accent {
@@ -73,8 +75,13 @@
   line-height: 72px;
   letter-spacing: 1px;
   max-width: 709px;
-  
   margin-bottom: 28px;
+}
+
+.header__text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .header__description {
@@ -89,7 +96,9 @@
 .header__image {
   height: 568px;
   width: 646px;
-  margin-right: 0px;
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 70px;
 }
 
 .header__footer {
