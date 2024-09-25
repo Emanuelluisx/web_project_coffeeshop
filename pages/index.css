@@ -203,7 +203,7 @@
 .reservation {
   display: flex;
   flex-direction: column;
-  min-height: 920px;
+  min-height: 950px;
   max-height: 100vh;
   padding: 30px 80px 40px;
   position: relative;
@@ -219,25 +219,23 @@
   font-size: 44px;
   line-height: 52px;
   align-self: center;
-  margin-top: 100px;
+  margin-top: 100px; /* Ajuste conforme necessário */
 }
 
 .reservation__form {
   max-width: 385px;
   margin: 60px auto;
   padding: 20px;
-
   border-radius: 8px;
 }
 
-.form__item {
+.reservation__form-item {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #838383;
   border-radius: 4px;
   box-sizing: border-box;
-
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -245,12 +243,11 @@
   line-height: 30px;
 }
 
-.form__checkbox {
+.reservation__checkbox {
   display: flex;
   justify-content: center;
   margin-top: 32px;
   margin-bottom: 120px;
-
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -258,7 +255,7 @@
   line-height: 20px;
 }
 
-.form__button {
+.reservation__button {
   width: 100%;
   padding: 12px;
   background-color: #2f80ed;
@@ -267,19 +264,19 @@
   border-radius: 4px;
   cursor: pointer;
   transition: opacity 0.4s;
-
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  margin-top: 32px;
 }
 
-.form__button:hover {
+.reservation__button:hover {
   opacity: 0.7;
 }
 
-.form__button:focus {
+.reservation__button:focus {
   outline: none;
   box-shadow: 0 0 5px #fff6c5;
 }
