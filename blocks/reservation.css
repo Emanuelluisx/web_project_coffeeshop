@@ -8,6 +8,7 @@
   box-sizing: border-box;
   background-image: url(../images/background_reservation.svg);
   background-color: #d9e7ff;
+   z-index: 1;
 }
 
 .reservation__title {
