@@ -1,1 +1,64 @@
+.footer {
+  position: relative; /* Para que o círculo seja posicionado em relação ao rodapé */
+  background-color: #0a2850;
+  color: #ffffff;
+  padding: 60px 80px;
+}
 
+.footer__columns {
+  display: flex;
+  justify-content: space-between; /* Espaço entre as colunas */
+  align-items: center; /* Alinha verticalmente */
+}
+
+.footer__column {
+  position: relative; /* Para que o círculo seja posicionado em relação a esta coluna */
+}
+
+.footer__circle {
+  width: 340px; /* Tamanho do círculo */
+  height: 340px; /* Tamanho do círculo */
+  background-color: #2f80ed; /* Cor do círculo */
+  border-radius: 50%; /* Faz o círculo */
+  position: absolute; /* Para posicionar em relação ao pai */
+  top: -40px; /* Ajuste a posição vertical */
+  left: 30px; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Centraliza o círculo */
+  z-index: 0; /* Coloca atrás do logo */
+}
+
+.footer__logo {
+  width: 105px; /* Largura do logo */
+  height: 39px; /* Altura do logo */
+  position: relative; /* Para que o logo fique acima do círculo */
+  z-index: 1; /* Garante que o logo fique acima do círculo */
+  display: block; /* Para garantir que o logo seja tratado como bloco */
+  margin: 0 auto; /* Centraliza o logo horizontalmente */
+}
+
+.footer__column-heading {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.footer__list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer__list-item {
+  color: white;
+  padding-bottom: 16px;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  color: white;
+}
