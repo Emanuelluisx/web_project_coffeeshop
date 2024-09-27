@@ -16,15 +16,7 @@
   justify-content: flex-end;
 }
 
-.span-accent {
-  font-family: Noto Serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 58px;
-  line-height: 72px;
-  color: #2f80ed;
-  display: block;
-}
+
 
 .header__title {
   font-family: "Inter";
