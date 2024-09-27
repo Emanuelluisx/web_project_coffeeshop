@@ -17,7 +17,6 @@
     <title>Café</title>
 
     <link rel="stylesheet" href="./pages/index.css" />
-   
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -89,7 +88,7 @@
           </p>
 
           <div class="recipes__videos">
-            <div class="video-item">
+            <div class="recipes__video-item">
               <iframe
                 class="recipes__iframe"
                 width="480"
@@ -100,12 +99,12 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <div class="video-info">
-                <p class="video-caption">Receita Aeropress</p>
-                <p class="video-duration">~5 min</p>
+              <div class="recipes__video-info">
+                <p class="recipes__video-caption">Receita Aeropress</p>
+                <p class="recipes__video-duration">~5 min</p>
               </div>
             </div>
-            <div class="video-item">
+            <div class="recipes__video-item">
               <iframe
                 class="recipes__iframe"
                 width="480"
@@ -116,16 +115,16 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <div class="video-info">
-                <p class="video-caption">Receita de Prensa Francesa</p>
-                <p class="video-duration">~15 min</p>
+              <div class="recipes__video-info">
+                <p class="recipes__video-caption">Receita de Prensa Francesa</p>
+                <p class="recipes__video-duration">~15 min</p>
               </div>
             </div>
           </div>
         </section>
 
         <section id="reservation" class="reservation">
-          <h1 class="reservation__title">Reservar uma mesa</h1>
+          <h2 class="reservation__title">Reservar uma mesa</h2>
 
           <form class="reservation__form form">
             <label class="label" for="name">Nome *</label>
@@ -137,7 +136,9 @@
               required
             />
 
-            <label class="label" for="guests">Número de convidados *</label>
+            <label class="reservation__label" for="guests"
+              >Número de convidados *</label
+            >
             <input
               type="number"
               id="guests"
@@ -148,7 +149,9 @@
               placeholder="1-8"
             />
 
-            <label class="label" for="datetime">Data & hora *</label>
+            <label class="reservation__label" for="datetime"
+              >Data & hora *</label
+            >
             <input
               type="datetime-local"
               id="datetime"
@@ -156,7 +159,7 @@
               required
             />
 
-            <label class="label" for="email">Seu e-mail *</label>
+            <label class="reservation__label" for="email">Seu e-mail *</label>
             <input
               type="email"
               id="email"
@@ -177,10 +180,54 @@
         </section>
       </main>
 
-      <footer class="footer"></footer>
+      <footer id="footer" class="footer">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <div class="footer__circle"></div>
+            <img
+              src="images/logo_coffeeshop_light.svg"
+              alt="Café Triple"
+              class="footer__logo"
+            />
+          </div>
+
+          <div class="footer__column footer__column_content_social">
+            <h4 class="footer__column-heading">Redes Sociais</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <span class="footer__social-icon">
+                    <img
+                      src="images/facebook_white.svg"
+                      alt="Facebook icon"
+                      class="footer__social-icon"
+                    />
+                  </span>
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <span class="footer__social-icon">
+                    <img
+                      src="images/instagram_white.svg"
+                      alt="Instagram icon"
+                      class="footer__social-icon"
+                    />
+                  </span>
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer__copyright">© 2024 Emanuel Luís</p>
+      </footer>
     </div>
   </body>
 </html>
+
 
 
 
