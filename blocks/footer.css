@@ -1,39 +1,40 @@
 .footer {
-  position: relative; /* Para que o círculo seja posicionado em relação ao rodapé */
+  position: relative;
   background-color: #0a2850;
   color: #ffffff;
   padding: 60px 80px;
+  overflow-x: hidden;
 }
 
 .footer__columns {
   display: flex;
-  justify-content: space-between; /* Espaço entre as colunas */
-  align-items: center; /* Alinha verticalmente */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__column {
-  position: relative; /* Para que o círculo seja posicionado em relação a esta coluna */
+  position: relative;
 }
 
 .footer__circle {
-  width: 340px; /* Tamanho do círculo */
-  height: 340px; /* Tamanho do círculo */
-  background-color: #2f80ed; /* Cor do círculo */
-  border-radius: 50%; /* Faz o círculo */
-  position: absolute; /* Para posicionar em relação ao pai */
-  top: -40px; /* Ajuste a posição vertical */
-  left: 30px; /* Centraliza horizontalmente */
-  transform: translate(-50%, -50%); /* Centraliza o círculo */
-  z-index: 0; /* Coloca atrás do logo */
+  width: 340px;
+  height: 340px;
+  background-color: #2f80ed;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 .footer__logo {
-  width: 105px; /* Largura do logo */
-  height: 39px; /* Altura do logo */
-  position: relative; /* Para que o logo fique acima do círculo */
-  z-index: 1; /* Garante que o logo fique acima do círculo */
-  display: block; /* Para garantir que o logo seja tratado como bloco */
-  margin: 0 auto; /* Centraliza o logo horizontalmente */
+  width: 105px;
+  height: 39px;
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer__column-heading {
@@ -52,9 +53,24 @@
   padding-bottom: 16px;
 }
 
+.footer__social-icon {
+  margin-right: 10px;
+}
+
 .footer__column-link {
   color: white;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
+.footer__column-link:focus {
+  color: #c1c1c1;
+  outline: none;
 }
 
 .footer__copyright {
