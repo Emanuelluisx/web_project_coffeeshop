@@ -29,6 +29,16 @@
   margin-bottom: 28px;
 }
 
+.header__accent {
+  font-family: Noto Serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+  display: block;
+}
+
 .header__text {
   display: flex;
   justify-content: space-between;
